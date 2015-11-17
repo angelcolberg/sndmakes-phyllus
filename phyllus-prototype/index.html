@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Philtr</title>
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- Modernizr is used for flexbox fallback -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		
+		<!-- Main view -->
+		<div class="view">
+			<!-- header -->
+			<header class="bp-header ">
+				
+				<h1 style="text-align:center"><i class="fa fa-filter logo"></i>Phyllus</h1>
+				<input type="text" class="searchfield" placeholder="Search" />
+                <nav>
+                <div class="button-group filters-button-group">
+  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".image">image</button>
+  <button class="button" data-filter=".video">video</button>
+  <button class="button" data-filter=".text">text</button>
+  <!--button class="button" data-filter=":not(.image)">no image</button-->
+  <!--button class="button" data-filter=".image:not(.text)">image, no text</button-->
+ 
+</div>
+                </nav>
+                
+			</header>
+			
+            
+            
+            <!-- Product grid -->
+			<section class="grid">
+				<!-- Products -->
+				<div class="product image"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/1.png" alt="Product 1" /></div>
+                        <!--div class="back face center">
+    <p>This is nice for exposing more information about an image.</p>
+    <p>Any content can go here.</p>
+  </div-->
+						<h3 class="product__title">Collier Meyerson</h3>
+						
+                        <span class="product__year extra highlight">collier@meyerson.com</span>
+						<span class="product__region extra highlight">Just spoke to a black junior mizzou student who is going to class bc: "I don't subscribe to a culture of fear" #ConcernedStudent1950</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+				<div class="product video"  data-category="video">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/11.png" alt="Product 11" /></div>
+						<h3 class="product__title">Concerned Student</h3>
+						<span class="product__year extra highlight">concerned@student.com</span>
+						<span class="product__region extra highlight">#BUStandsWithMizzou on the grounds of MLK Jr.'s graduate theology studies:fist::fist::fist::fist::fist: #ConcernedStudent1950</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+				<div class="product image"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/10.png" alt="Product 10" /></div>
+						<h3 class="product__title">Alex Stuckey</h3>
+						<span class="product__year extra highlight">alex@alexdstuckey.com</span>
+						<span class="product__region extra highlight">Just made it back to @Mizzou, where many businesses like this one are closed cuz of threats #ConcernedStudent1950 </span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+                
+				<div class="product image"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/5.png" alt="Product 4" /></div>
+						<h3 class="product__title">Leonetti Sangiovese</h3>
+						<span class="product__year extra highlight">l.sangiovese@email.com</span>
+						<span class="product__region extra highlight">Just spoke to a black junior mizzou student who is going to class bc: "I don't subscribe to a culture of fear" #ConcernedStudent1950</span>
+						
+					<span></span>	
+					</div>
+                    
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+                
+				<div class="product text"  data-category="text">
+					<div class="product__info">
+                         <div class="front face empty">
+                             <img class="product__image" src="images/3.png" alt="Product 5" /></div>
+						<h3 class="product__title">Collier Meyerson</h3>
+						<span class="product__year extra highlight">collier@meyerson.com</span>
+						<span class="product__region extra highlight">Black Mizzou prof says at least 3 black profs canceled class. Black students emailing him, are afraid, staying home  #ConcernedStudent1950</span>
+<span class="product__price highlight">
+                            <p>
+                                  <textarea class="js-copytextarea" style="font-size:10%">[EMBEDDABLE LINK GOES HERE]
+                                  </textarea>
+                                  <br>
+                                  <button class="js-textareacopybtn">Copy Embed Link</button>
+                            </p>
+                        </span>
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+                
+                
+				<div class="product video"  data-category="video">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/2.png" alt="Product 6" /></div>
+						<h3 class="product__title">Jeffrey Smith</h3>
+						<span class="product__year extra highlight">jeff@email.com</span>
+						<span class="product__region extra highlight">Lorem ipsum sit amet....</span>
+						
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+				<div class="product video"  data-category="video">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/1.png" alt="Product 1" /></div>
+                        <!--div class="back face center">
+    <p>This is nice for exposing more information about an image.</p>
+    <p>Any content can go here.</p>
+  </div-->
+						<h3 class="product__title">Collier Meyerson</h3>
+						
+                        <span class="product__year extra highlight">collier@meyerson.com</span>
+						<span class="product__region extra highlight">Just spoke to a black junior mizzou student who is going to class bc: "I don't subscribe to a culture of fear" #ConcernedStudent1950</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+				<div class="product image"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/11.png" alt="Product 11" /></div>
+						<h3 class="product__title">Concerned Student</h3>
+						<span class="product__year extra highlight">concerned@student.com</span>
+						<span class="product__region extra highlight">#BUStandsWithMizzou on the grounds of MLK Jr.'s graduate theology studies:fist::fist::fist::fist::fist: #ConcernedStudent1950</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+				<div class="product image"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/10.png" alt="Product 10" /></div>
+						<h3 class="product__title">Alex Stuckey</h3>
+						<span class="product__year extra highlight">alex@alexdstuckey.com</span>
+						<span class="product__region extra highlight">Just made it back to @Mizzou, where many businesses like this one are closed cuz of threats #ConcernedStudent1950 </span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                                
+                
+                
+				<!--div class="product image text"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/7.png" alt="Product 7" /></div>
+						<h3 class="product__title">Clarendon Hills Astralis</h3>
+						<span class="product__year extra highlight">2006</span>
+						<span class="product__region extra highlight">McLaren Vale</span>
+						<span class="product__varietal extra highlight">Syrah, Shiraz</span>
+						<span class="product__alcohol extra highlight">12%</span>
+						<span class="product__price highlight">$153.90</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+                
+				<div class="product image text"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/8.png" alt="Product 8" /></div>
+						<h3 class="product__title">Lapostolle Clos Apalta</h3>
+						<span class="product__year extra highlight">2010</span>
+						<span class="product__region extra highlight">Chile</span>
+						<span class="product__varietal extra highlight">Bordeaux</span>
+						<span class="product__alcohol extra highlight">12%</span>
+						<span class="product__price highlight">$82.90</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+                
+				<div class="product image text"  data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/9.png" alt="Product 9" /></div>
+						<h3 class="product__title">Bodega Colome Reserva</h3>
+						<span class="product__year extra highlight">2009</span>
+						<span class="product__region extra highlight">Argentina</span>
+						<span class="product__varietal extra highlight">Malbec</span>
+						<span class="product__alcohol extra highlight">13%</span>
+						<span class="product__price highlight">$99.90</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+               
+                
+                
+				<div class="product video text"  data-category="video">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/10.png" alt="Product 10" /></div>
+						<h3 class="product__title">Montevertine Le Pergole Torte</h3>
+						<span class="product__year extra highlight">2011</span>
+						<span class="product__region extra highlight">Tuscany</span>
+						<span class="product__varietal extra highlight">Sangiovese </span>
+						<span class="product__alcohol extra highlight">12%</span>
+						<span class="product__price highlight">$119.90</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                
+				<div class="product image text" data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/2.png" alt="Product 11" /></div>
+						<h3 class="product__title">Massolino Vigna Parussi Barolo</h3>
+						<span class="product__year extra highlight">2009</span>
+						<span class="product__region extra highlight">Piedmont</span>
+						<span class="product__varietal extra highlight">Nebbiolo</span>
+						<span class="product__alcohol extra highlight">12%</span>
+						<span class="product__price highlight">$169.90</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+				<div class="product image text" data-category="image">
+					<div class="product__info">
+                         <div class="front face">
+                             <img class="product__image" src="images/placeholder.png" alt="Product 12" /></div>
+						<h3 class="product__title">Collier Meyerson</h3>
+						<span class="product__year extra highlight">collier@meyerson.com</span>
+						<span class="product__region extra highlight">Just spoke to a black junior mizzou student who is going to class bc: "I don't subscribe to a culture of fear" #ConcernedStudent1950</span>
+						<span class="product__price highlight">Space for drew</span>
+						
+					</div>
+					<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to bucket</span></label>
+				</div>
+                
+                
+                <!-- End Andy -->
+                
+			</section>
+            
+            <!-- Compare basket -->
+		<div class="compare-basket">
+			<button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Create Page</span></button>
+<button class="action action--button"><i class="fa fa-save"></i><span class="action__text">Save</span></button>
+<button class="action action--button"><i class="fa fa-share"></i><span class="action__text">Share</span></button>   
+		</div>
+            
+            
+		</div><!-- /view -->
+		<!-- product compare wrapper -->
+		<section class="compare">
+			<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close  overlay</span></button>
+		</section>
+        
+        
+        
+        
+		<script src="js/classie.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
